@@ -32,6 +32,7 @@ class Dataset(torch.utils.data.Dataset):
     def __len__(self):
         return len(self._target_df)
 
+
 def assign_rows_to_split(
     df: pd.DataFrame,
     train_ratio: float=0.7,
